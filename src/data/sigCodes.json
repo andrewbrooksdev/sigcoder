@@ -1,0 +1,916 @@
+{
+  "data": [
+    {
+      "sig_code": "AAA",
+      "explanation": "apply to affected area"
+    },
+    {
+      "sig_code": "ac",
+      "explanation": "before meals"
+    },
+    {
+      "sig_code": "ad",
+      "explanation": "right ear"
+    },
+    {
+      "sig_code": "am",
+      "explanation": "morning, in the morning, before noon"
+    },
+    {
+      "sig_code": "amp",
+      "explanation": "ampule or ampul"
+    },
+    {
+      "sig_code": "amp",
+      "explanation": "ampicillin"
+    },
+    {
+      "sig_code": "APAP",
+      "explanation": "acetaminophen"
+    },
+    {
+      "sig_code": "aq",
+      "explanation": "aqueous (water)"
+    },
+    {
+      "sig_code": "as",
+      "explanation": "left ear"
+    },
+    {
+      "sig_code": "au",
+      "explanation": "each ear, both ears"
+    },
+    {
+      "sig_code": "AUD",
+      "explanation": "apply as directed"
+    },
+    {
+      "sig_code": "bid or b.i.d.",
+      "explanation": "twice a day"
+    },
+    {
+      "sig_code": "BOT",
+      "explanation": "bottle"
+    },
+    {
+      "sig_code": "BP",
+      "explanation": "blood pressure"
+    },
+    {
+      "sig_code": "c",
+      "explanation": "with"
+    },
+    {
+      "sig_code": "C or c",
+      "explanation": "100 (roman numeral)"
+    },
+    {
+      "sig_code": "cap",
+      "explanation": "capsule"
+    },
+    {
+      "sig_code": "cc",
+      "explanation": "cubic centimeter (1 cc = 1 mL)"
+    },
+    {
+      "sig_code": "cf",
+      "explanation": "with food"
+    },
+    {
+      "sig_code": "CF",
+      "explanation": "cough formula or cold formula"
+    },
+    {
+      "sig_code": "cm",
+      "explanation": "centimeter"
+    },
+    {
+      "sig_code": "CPM",
+      "explanation": "chlorpheniramine"
+    },
+    {
+      "sig_code": "cr",
+      "explanation": "cream"
+    },
+    {
+      "sig_code": "CR",
+      "explanation": "controlled release"
+    },
+    {
+      "sig_code": "cre",
+      "explanation": "cream"
+    },
+    {
+      "sig_code": "D or d",
+      "explanation": "500 (roman numeral)"
+    },
+    {
+      "sig_code": "D/C or d/c",
+      "explanation": "discontinue"
+    },
+    {
+      "sig_code": "DA",
+      "explanation": "delayed action"
+    },
+    {
+      "sig_code": "DAW",
+      "explanation": "dispense as written"
+    },
+    {
+      "sig_code": "dc or d/c",
+      "explanation": "discontinue"
+    },
+    {
+      "sig_code": "DC",
+      "explanation": "diagnosis code"
+    },
+    {
+      "sig_code": "dil",
+      "explanation": "dilute, dissolve"
+    },
+    {
+      "sig_code": "disp",
+      "explanation": "dispense"
+    },
+    {
+      "sig_code": "dL",
+      "explanation": "deciliter"
+    },
+    {
+      "sig_code": "DM",
+      "explanation": "dextromethorphan"
+    },
+    {
+      "sig_code": "DR",
+      "explanation": "delayed release"
+    },
+    {
+      "sig_code": "DS",
+      "explanation": "double strength"
+    },
+    {
+      "sig_code": "DV",
+      "explanation": "daily value"
+    },
+    {
+      "sig_code": "EC or e.c.",
+      "explanation": "enteric coated"
+    },
+    {
+      "sig_code": "ECT",
+      "explanation": "enteric-coated tablet"
+    },
+    {
+      "sig_code": "ER",
+      "explanation": "extended release"
+    },
+    {
+      "sig_code": "fl",
+      "explanation": "fluid"
+    },
+    {
+      "sig_code": "fl oz",
+      "explanation": "fluid ounce"
+    },
+    {
+      "sig_code": "ft",
+      "explanation": "foot, feet"
+    },
+    {
+      "sig_code": "g",
+      "explanation": "gram"
+    },
+    {
+      "sig_code": "gal",
+      "explanation": "gallon"
+    },
+    {
+      "sig_code": "GG",
+      "explanation": "guaifenesin"
+    },
+    {
+      "sig_code": "GGPE",
+      "explanation": "guaifenesin/phenylephrine"
+    },
+    {
+      "sig_code": "gm",
+      "explanation": "gram"
+    },
+    {
+      "sig_code": "gr",
+      "explanation": "grain"
+    },
+    {
+      "sig_code": "gtt",
+      "explanation": "drop"
+    },
+    {
+      "sig_code": "h or hr",
+      "explanation": "hour"
+    },
+    {
+      "sig_code": "H2O",
+      "explanation": "water"
+    },
+    {
+      "sig_code": "HA",
+      "explanation": "headache"
+    },
+    {
+      "sig_code": "HBP",
+      "explanation": "high blood pressure"
+    },
+    {
+      "sig_code": "HC",
+      "explanation": "hydrocodone or hydrocortisone"
+    },
+    {
+      "sig_code": "HCT",
+      "explanation": "hydrochlorothiazide"
+    },
+    {
+      "sig_code": "HCTZ",
+      "explanation": "hydrochlorothiazide"
+    },
+    {
+      "sig_code": "hs",
+      "explanation": "at bedtime"
+    },
+    {
+      "sig_code": "ht",
+      "explanation": "height"
+    },
+    {
+      "sig_code": "HT or HTN",
+      "explanation": "hypertension"
+    },
+    {
+      "sig_code": "I or i",
+      "explanation": "1 (roman numeral)"
+    },
+    {
+      "sig_code": "IM",
+      "explanation": "intramuscular"
+    },
+    {
+      "sig_code": "in",
+      "explanation": "inch"
+    },
+    {
+      "sig_code": "inh",
+      "explanation": "inhalation"
+    },
+    {
+      "sig_code": "INH",
+      "explanation": "isoniazid"
+    },
+    {
+      "sig_code": "inj",
+      "explanation": "injection"
+    },
+    {
+      "sig_code": "IR",
+      "explanation": "immediate release"
+    },
+    {
+      "sig_code": "IT or ITCH",
+      "explanation": "itching"
+    },
+    {
+      "sig_code": "IU or I.U.",
+      "explanation": "international unit"
+    },
+    {
+      "sig_code": "IV",
+      "explanation": "intravenous"
+    },
+    {
+      "sig_code": "K",
+      "explanation": "Potassium"
+    },
+    {
+      "sig_code": "KCl or KCL",
+      "explanation": "Potassium Chloride"
+    },
+    {
+      "sig_code": "kg",
+      "explanation": "kilogram"
+    },
+    {
+      "sig_code": "L or l",
+      "explanation": "liter"
+    },
+    {
+      "sig_code": "L or l",
+      "explanation": "50 (roman numeral)"
+    },
+    {
+      "sig_code": "LA",
+      "explanation": "long-acting"
+    },
+    {
+      "sig_code": "lb",
+      "explanation": "pound"
+    },
+    {
+      "sig_code": "liq",
+      "explanation": "liquid"
+    },
+    {
+      "sig_code": "lot",
+      "explanation": "lotion"
+    },
+    {
+      "sig_code": "m",
+      "explanation": "meter"
+    },
+    {
+      "sig_code": "M or m",
+      "explanation": "1,000 (roman numeral)"
+    },
+    {
+      "sig_code": "m²",
+      "explanation": "square meters or meters squared"
+    },
+    {
+      "sig_code": "mcg",
+      "explanation": "microgram"
+    },
+    {
+      "sig_code": "mcL",
+      "explanation": "microliter"
+    },
+    {
+      "sig_code": "MDI",
+      "explanation": "metered dose inhaler"
+    },
+    {
+      "sig_code": "MDP",
+      "explanation": "Medrol Dose Pack"
+    },
+    {
+      "sig_code": "mEq",
+      "explanation": "milliequivalent"
+    },
+    {
+      "sig_code": "Mg or Mag",
+      "explanation": "Magnesium"
+    },
+    {
+      "sig_code": "mg",
+      "explanation": "milligram"
+    },
+    {
+      "sig_code": "mg/dL",
+      "explanation": "milligrams (mg) of substance per deciliter (dL) of blood"
+    },
+    {
+      "sig_code": "mL",
+      "explanation": "milliliter"
+    },
+    {
+      "sig_code": "mm Hg",
+      "explanation": "millimeters of mercury (measure of blood pressure)"
+    },
+    {
+      "sig_code": "MTX",
+      "explanation": "methotrexate"
+    },
+    {
+      "sig_code": "MVI",
+      "explanation": "Multi-Vitamins or multiple vitamins"
+    },
+    {
+      "sig_code": "N/A or n/a",
+      "explanation": "not available"
+    },
+    {
+      "sig_code": "N&V or N/V",
+      "explanation": "nausea and vomiting"
+    },
+    {
+      "sig_code": "NA",
+      "explanation": "nausea"
+    },
+    {
+      "sig_code": "Na",
+      "explanation": "Sodium"
+    },
+    {
+      "sig_code": "NaCl",
+      "explanation": "Sodium Chloride (salt)"
+    },
+    {
+      "sig_code": "NaHCO3",
+      "explanation": "sodium bicarbonate"
+    },
+    {
+      "sig_code": "NDC",
+      "explanation": "national drug code"
+    },
+    {
+      "sig_code": "NEB or neb",
+      "explanation": "nebulizer"
+    },
+    {
+      "sig_code": "No. or no.",
+      "explanation": "number"
+    },
+    {
+      "sig_code": "Nos. or nos.",
+      "explanation": "numbers"
+    },
+    {
+      "sig_code": "noct",
+      "explanation": "night, at night"
+    },
+    {
+      "sig_code": "NPH",
+      "explanation": "N insulin (an intermediate-acting insulin)"
+    },
+    {
+      "sig_code": "NPH",
+      "explanation": "N insulin (Humulin N or Novolin N)"
+    },
+    {
+      "sig_code": "NPI",
+      "explanation": "National Provider Identifier"
+    },
+    {
+      "sig_code": "npo",
+      "explanation": "nothing by mouth"
+    },
+    {
+      "sig_code": "NR or N.R.",
+      "explanation": "no refill"
+    },
+    {
+      "sig_code": "NRF",
+      "explanation": "no refill"
+    },
+    {
+      "sig_code": "NS",
+      "explanation": "nasal spray"
+    },
+    {
+      "sig_code": "NS",
+      "explanation": "normal saline (0.9% sodium chloride)"
+    },
+    {
+      "sig_code": "NTG",
+      "explanation": "nitroglycerin"
+    },
+    {
+      "sig_code": "NV",
+      "explanation": "nausea and vomiting"
+    },
+    {
+      "sig_code": "od",
+      "explanation": "right eye"
+    },
+    {
+      "sig_code": "ODT",
+      "explanation": "orally disintegrating tablet"
+    },
+    {
+      "sig_code": "oint",
+      "explanation": "ointment"
+    },
+    {
+      "sig_code": "OP or OPH",
+      "explanation": "ophthalmic"
+    },
+    {
+      "sig_code": "OPHT or OPHTH",
+      "explanation": "ophthalmic"
+    },
+    {
+      "sig_code": "os",
+      "explanation": "left eye"
+    },
+    {
+      "sig_code": "OTC",
+      "explanation": "over the counter"
+    },
+    {
+      "sig_code": "ou",
+      "explanation": "each eye, both eyes"
+    },
+    {
+      "sig_code": "oz",
+      "explanation": "ounce"
+    },
+    {
+      "sig_code": "PA",
+      "explanation": "prior authorization"
+    },
+    {
+      "sig_code": "PB or Pb",
+      "explanation": "phenobarbital"
+    },
+    {
+      "sig_code": "pc",
+      "explanation": "after meals"
+    },
+    {
+      "sig_code": "PCN",
+      "explanation": "penicillin"
+    },
+    {
+      "sig_code": "pct",
+      "explanation": "percent or percentage"
+    },
+    {
+      "sig_code": "PD",
+      "explanation": "pediatric drop"
+    },
+    {
+      "sig_code": "PED",
+      "explanation": "pediatric"
+    },
+    {
+      "sig_code": "PEG",
+      "explanation": "polyethylene glycol (a laxative)"
+    },
+    {
+      "sig_code": "per",
+      "explanation": "by or through"
+    },
+    {
+      "sig_code": "pH",
+      "explanation": "a measure of how acidic or basic a substance is"
+    },
+    {
+      "sig_code": "pkd",
+      "explanation": "packaged"
+    },
+    {
+      "sig_code": "pkg",
+      "explanation": "package"
+    },
+    {
+      "sig_code": "pkt",
+      "explanation": "packet"
+    },
+    {
+      "sig_code": "pm",
+      "explanation": "evening, in the evening, after noon"
+    },
+    {
+      "sig_code": "PMS",
+      "explanation": "premenstrual syndrome"
+    },
+    {
+      "sig_code": "PNV",
+      "explanation": "prenatal vitamins"
+    },
+    {
+      "sig_code": "po",
+      "explanation": "by mouth"
+    },
+    {
+      "sig_code": "pp",
+      "explanation": "postprandial (after eating)"
+    },
+    {
+      "sig_code": "PR",
+      "explanation": "per rectum, by rectum"
+    },
+    {
+      "sig_code": "prn",
+      "explanation": "as needed"
+    },
+    {
+      "sig_code": "PSE",
+      "explanation": "pseudoephedrine"
+    },
+    {
+      "sig_code": "pt",
+      "explanation": "pint"
+    },
+    {
+      "sig_code": "pt or pt.",
+      "explanation": "patient"
+    },
+    {
+      "sig_code": "PTU",
+      "explanation": "propylthiouracil"
+    },
+    {
+      "sig_code": "q",
+      "explanation": "every, each"
+    },
+    {
+      "sig_code": "qam",
+      "explanation": "every morning"
+    },
+    {
+      "sig_code": "qd",
+      "explanation": "every day, each day, daily"
+    },
+    {
+      "sig_code": "qdam",
+      "explanation": "every day in the morning"
+    },
+    {
+      "sig_code": "qd pm",
+      "explanation": "every day in the evening"
+    },
+    {
+      "sig_code": "qh",
+      "explanation": "every hour"
+    },
+    {
+      "sig_code": "q12h",
+      "explanation": "every 12 hours"
+    },
+    {
+      "sig_code": "q2-3h",
+      "explanation": "every two to three hours"
+    },
+    {
+      "sig_code": "q24h",
+      "explanation": "every 24 hours"
+    },
+    {
+      "sig_code": "q2-4h",
+      "explanation": "every two to four hours"
+    },
+    {
+      "sig_code": "q4h",
+      "explanation": "every four hours"
+    },
+    {
+      "sig_code": "q4-6h",
+      "explanation": "every four to six hours"
+    },
+    {
+      "sig_code": "q4°",
+      "explanation": "every four hours"
+    },
+    {
+      "sig_code": "q6°",
+      "explanation": "every six hours"
+    },
+    {
+      "sig_code": "qhs",
+      "explanation": "every night at bedtime"
+    },
+    {
+      "sig_code": "qid or q.i.d.",
+      "explanation": "four times a day"
+    },
+    {
+      "sig_code": "qod",
+      "explanation": "every other day"
+    },
+    {
+      "sig_code": "qpm",
+      "explanation": "every evening"
+    },
+    {
+      "sig_code": "q 8pm",
+      "explanation": "every day at 8 p.m."
+    },
+    {
+      "sig_code": "qs or QS or Q.S.",
+      "explanation": "quantity sufficient"
+    },
+    {
+      "sig_code": "qt",
+      "explanation": "quart"
+    },
+    {
+      "sig_code": "QTY or qty",
+      "explanation": "quantity"
+    },
+    {
+      "sig_code": "qw",
+      "explanation": "every week, once a week"
+    },
+    {
+      "sig_code": "R",
+      "explanation": "rectum, rectally"
+    },
+    {
+      "sig_code": "RA",
+      "explanation": "rheumatoid arthritis"
+    },
+    {
+      "sig_code": "RF",
+      "explanation": "refill"
+    },
+    {
+      "sig_code": "Rx",
+      "explanation": "prescription"
+    },
+    {
+      "sig_code": "s",
+      "explanation": "without"
+    },
+    {
+      "sig_code": "SA",
+      "explanation": "sustained action"
+    },
+    {
+      "sig_code": "sc",
+      "explanation": "subcutaneous, under the skin"
+    },
+    {
+      "sig_code": "sig",
+      "explanation": "signa (directions for using a prescription)"
+    },
+    {
+      "sig_code": "SL or S.L.",
+      "explanation": "sublingual, under the tongue"
+    },
+    {
+      "sig_code": "SMZ-TMP",
+      "explanation": "sulfamethoxazole/trimethoprim"
+    },
+    {
+      "sig_code": "SOB",
+      "explanation": "shortness of breath"
+    },
+    {
+      "sig_code": "SOD or sod",
+      "explanation": "sodium"
+    },
+    {
+      "sig_code": "sol or soln",
+      "explanation": "solution"
+    },
+    {
+      "sig_code": "sq",
+      "explanation": "subcutaneous, under the skin"
+    },
+    {
+      "sig_code": "SR",
+      "explanation": "sustained release"
+    },
+    {
+      "sig_code": "ss",
+      "explanation": "one half (½) (roman numeral)"
+    },
+    {
+      "sig_code": "stat",
+      "explanation": "now; immediately"
+    },
+    {
+      "sig_code": "subq",
+      "explanation": "subcutaneous, under the skin"
+    },
+    {
+      "sig_code": "sup or supp",
+      "explanation": "suppository"
+    },
+    {
+      "sig_code": "susp",
+      "explanation": "suspension"
+    },
+    {
+      "sig_code": "syr",
+      "explanation": "syrup"
+    },
+    {
+      "sig_code": "SYR",
+      "explanation": "syringe"
+    },
+    {
+      "sig_code": "tab",
+      "explanation": "tablet"
+    },
+    {
+      "sig_code": "tac or TAC",
+      "explanation": "triamcinolone"
+    },
+    {
+      "sig_code": "tud or TUD",
+      "explanation": "take as directed"
+    },
+    {
+      "sig_code": "tat or TAT",
+      "explanation": "until all taken"
+    },
+    {
+      "sig_code": "tbsp",
+      "explanation": "tablespoonful"
+    },
+    {
+      "sig_code": "TCN",
+      "explanation": "tetracycline"
+    },
+    {
+      "sig_code": "tiw or t.i.w.",
+      "explanation": "three times a week"
+    },
+    {
+      "sig_code": "TMP",
+      "explanation": "trimethoprim"
+    },
+    {
+      "sig_code": "top",
+      "explanation": "topical"
+    },
+    {
+      "sig_code": "tr",
+      "explanation": "timed-release"
+    },
+    {
+      "sig_code": "tsp",
+      "explanation": "teaspoonful"
+    },
+    {
+      "sig_code": "tud or TUD",
+      "explanation": "take as directed"
+    },
+    {
+      "sig_code": "U",
+      "explanation": "units"
+    },
+    {
+      "sig_code": "uad or UAD",
+      "explanation": "use as directed"
+    },
+    {
+      "sig_code": "uat or UAT",
+      "explanation": "until all taken"
+    },
+    {
+      "sig_code": "ud",
+      "explanation": "as directed"
+    },
+    {
+      "sig_code": "ut dict",
+      "explanation": "as directed"
+    },
+    {
+      "sig_code": "ung",
+      "explanation": "ointment"
+    },
+    {
+      "sig_code": "UTI",
+      "explanation": "urinary tract infection"
+    },
+    {
+      "sig_code": "V or v",
+      "explanation": "5 (roman numeral)"
+    },
+    {
+      "sig_code": "vag",
+      "explanation": "vaginally"
+    },
+    {
+      "sig_code": "w/",
+      "explanation": "with"
+    },
+    {
+      "sig_code": "w/o",
+      "explanation": "without"
+    },
+    {
+      "sig_code": "WA",
+      "explanation": "while awake"
+    },
+    {
+      "sig_code": "WH",
+      "explanation": "wheezing"
+    },
+    {
+      "sig_code": "wk",
+      "explanation": "week"
+    },
+    {
+      "sig_code": "wt",
+      "explanation": "weight"
+    },
+    {
+      "sig_code": "WZ",
+      "explanation": "wheezing"
+    },
+    {
+      "sig_code": "X or x",
+      "explanation": "10 (roman numeral)"
+    },
+    {
+      "sig_code": "X or x",
+      "explanation": "times"
+    },
+    {
+      "sig_code": "x 1 RF",
+      "explanation": "times one refill"
+    },
+    {
+      "sig_code": "X 3 RF",
+      "explanation": "times three refills"
+    },
+    {
+      "sig_code": "XL",
+      "explanation": "extra long"
+    },
+    {
+      "sig_code": "XR",
+      "explanation": "extended release"
+    }
+  ]
+}
