@@ -11,7 +11,7 @@ export const useSigCodeGuesserStore = defineStore('sigCodeGuesser', () => {
     sigCodeData.map((item) => new SigCodeGuesserAnswer(item))
   )
 
-  const currentPrompt = computed(() => {
+  const randomUnansweredPrompt = computed(() => {
     const unansweredPrompts = prompts.filter((prompt) => {
       return prompt.correct === undefined
     })
@@ -23,6 +23,8 @@ export const useSigCodeGuesserStore = defineStore('sigCodeGuesser', () => {
 
     return unansweredPrompts[promptIndex] || null
   })
+
+  const currentPrompt = ref<SigCodeGuesserAnswer>(randomUnansweredPrompt.value)
 
   const correctAnswers = computed(() => {
     return prompts.filter((prompt) => {
@@ -37,9 +39,12 @@ export const useSigCodeGuesserStore = defineStore('sigCodeGuesser', () => {
   })
 
   function checkAnswer(sigCode: string) {
-    currentPrompt.value.correct = !!(
-      currentPrompt.value && currentPrompt.value.sigCode.sig_code === sigCode
-    )
+    if (currentPrompt.value) {
+      currentPrompt.value.correct = currentPrompt.value.sigCode.sig_code === sigCode
+      if (currentPrompt.value.correct) {
+        currentPrompt.value = randomUnansweredPrompt.value
+      }
+    }
   }
 
   return { currentPrompt, checkAnswer, correctAnswers, incorrectAnswers }

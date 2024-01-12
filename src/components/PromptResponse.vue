@@ -5,7 +5,7 @@ import { ref } from 'vue'
 const text = ref('')
 const sigCodeGuesserStore = useSigCodeGuesserStore()
 
-const preCheckAnswer = () => {
+const submitAnswer = () => {
   sigCodeGuesserStore.checkAnswer(text.value)
   text.value = ''
 }
@@ -13,10 +13,11 @@ const preCheckAnswer = () => {
 
 <template>
   <div>
-    <input v-model="text" placeholder="Enter the Sig Code equivalent" />
-    <button @click="preCheckAnswer()">Submit!</button>
-    <p>Correct count: {{ sigCodeGuesserStore.correctAnswers.length }}</p>
-    <p>Incorrect count: {{ sigCodeGuesserStore.incorrectAnswers.length }}</p>
+    <input v-model="text" placeholder="Enter Sig Code" />
+    <button @click="submitAnswer()">Submit!</button>
+    <div id="result">
+      {{ sigCodeGuesserStore.currentPrompt.correct === false ? 'Incorrect, try again!' : null }}
+    </div>
   </div>
 </template>
 
