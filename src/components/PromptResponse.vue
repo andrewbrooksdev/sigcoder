@@ -6,11 +6,7 @@ const sigCodeGuesserStore = useSigCodeGuesserStore()
 const text = ref('')
 
 const submitAnswer = () => {
-  // Perform validation if needed
-
   sigCodeGuesserStore.checkAnswer(text.value)
-
-  // Reset the form
   text.value = ''
 }
 
@@ -38,6 +34,4 @@ const resultMessage = computed(() => {
   </div>
 </template>
 
-<style scoped>
-/* Add your scoped styles if needed */
-</style>
+<style scoped></style>
