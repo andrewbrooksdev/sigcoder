@@ -1,14 +1,20 @@
 <script setup lang="ts">
 import { useSigCodeGuesserStore } from '@/stores/sigCodeGuesser'
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 
-const text = ref('')
 const sigCodeGuesserStore = useSigCodeGuesserStore()
+const text = ref('')
 
 const submitAnswer = () => {
   sigCodeGuesserStore.checkAnswer(text.value)
   text.value = ''
 }
+
+// Computed property for conditional rendering
+const resultMessage = computed(() => {
+  const currentPrompt = sigCodeGuesserStore.currentPrompt
+  return currentPrompt.correct === false ? 'Incorrect, try again!' : null
+})
 </script>
 
 <template>
@@ -16,7 +22,7 @@ const submitAnswer = () => {
     <input v-model="text" placeholder="Enter Sig Code" />
     <button @click="submitAnswer()">Submit!</button>
     <div id="result">
-      {{ sigCodeGuesserStore.currentPrompt.correct === false ? 'Incorrect, try again!' : null }}
+      {{ resultMessage }}
     </div>
   </div>
 </template>
