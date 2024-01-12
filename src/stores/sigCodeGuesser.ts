@@ -4,41 +4,28 @@ import SigCodeData from '../models/SigCodeData'
 import type ISigCode from '../interfaces/ISigCode'
 import SigCodeGuesserAnswer from '../models/SigCodeGuesserAnswer'
 
+const getRandomInt = (min: number, max: number) => Math.floor(Math.random() * (max - min + 1)) + min
+
+const createPrompts = (data: ISigCode[]) =>
+  reactive(data.map((item) => new SigCodeGuesserAnswer(item)))
+
+const filterUnansweredPrompts = (prompts: SigCodeGuesserAnswer[]) =>
+  prompts.filter((prompt) => prompt.correct === undefined)
+
 export const useSigCodeGuesserStore = defineStore('sigCodeGuesser', () => {
   const sigCodeData: ISigCode[] = new SigCodeData().data
 
-  const prompts: SigCodeGuesserAnswer[] = reactive(
-    sigCodeData.map((item) => new SigCodeGuesserAnswer(item))
+  const prompts = computed(() => createPrompts(sigCodeData))
+  const unansweredPrompts = computed(() => filterUnansweredPrompts(prompts.value))
+  const randomUnansweredPrompt = computed(
+    () => unansweredPrompts.value[getRandomInt(0, unansweredPrompts.value.length - 1)] || null
   )
-
-  const randomUnansweredPrompt = computed(() => {
-    const unansweredPrompts = prompts.filter((prompt) => {
-      return prompt.correct === undefined
-    })
-    const getRandomInt = (min: number, max: number) => {
-      return Math.floor(Math.random() * (max - min + 1)) + min
-    }
-
-    const promptIndex = getRandomInt(0, unansweredPrompts.length)
-
-    return unansweredPrompts[promptIndex] || null
-  })
 
   const currentPrompt = ref<SigCodeGuesserAnswer>(randomUnansweredPrompt.value)
 
-  const correctAnswers = computed(() => {
-    return prompts.filter((prompt) => {
-      return prompt.correct === true
-    })
-  })
+  const answers = computed(() => prompts.value.filter((prompt) => prompt.correct !== undefined))
 
-  const incorrectAnswers = computed(() => {
-    return prompts.filter((prompt) => {
-      return prompt.correct === false
-    })
-  })
-
-  function checkAnswer(sigCode: string) {
+  const checkAnswer = (sigCode: string) => {
     if (currentPrompt.value) {
       currentPrompt.value.correct = currentPrompt.value.sigCode.sig_code === sigCode
       if (currentPrompt.value.correct) {
@@ -47,5 +34,5 @@ export const useSigCodeGuesserStore = defineStore('sigCodeGuesser', () => {
     }
   }
 
-  return { currentPrompt, checkAnswer, correctAnswers, incorrectAnswers }
+  return { currentPrompt, checkAnswer, answers }
 })
