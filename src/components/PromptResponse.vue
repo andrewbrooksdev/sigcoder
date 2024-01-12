@@ -10,6 +10,10 @@ const submitAnswer = () => {
   text.value = ''
 }
 
+const resetGame = () => {
+  sigCodeGuesserStore.resetGame()
+}
+
 const resultMessage = computed(() => {
   const currentPrompt = sigCodeGuesserStore.currentPrompt
   return currentPrompt.correct === false ? 'Incorrect, try again!' : null
@@ -26,6 +30,7 @@ const resultMessage = computed(() => {
       <input id="sigCodeInput" v-model="text" placeholder="Enter Sig Code" required />
       <div>
         <button type="submit" :disabled="text.length === 0">Submit!</button>
+        <button type="button" @click="resetGame">Start Over</button>
       </div>
       <div id="result">
         {{ resultMessage }}

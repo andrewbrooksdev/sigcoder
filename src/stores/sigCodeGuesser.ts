@@ -1,9 +1,11 @@
-import { ref, computed, reactive } from 'vue'
+import { ref, computed, reactive, watch } from 'vue'
 import { defineStore } from 'pinia'
 import SigCodeData from '../models/SigCodeData'
 import type ISigCode from '../interfaces/ISigCode'
 import SigCodeGuesserAnswer from '../models/SigCodeGuesserAnswer'
 import type ISigCodeGuesserAnswer from '@/interfaces/ISigCodeGuesserAnswer'
+
+const STORAGE_KEY = 'sigCodeGuesserData'
 
 const getRandomInt = (min: number, max: number) => Math.floor(Math.random() * (max - min + 1)) + min
 
@@ -16,15 +18,28 @@ const filterUnansweredPrompts = (prompts: ISigCodeGuesserAnswer[]) =>
 export const useSigCodeGuesserStore = defineStore('sigCodeGuesser', () => {
   const sigCodeData: ISigCode[] = new SigCodeData().data
 
-  const prompts = computed(() => createPrompts(sigCodeData))
-  const unansweredPrompts = computed(() => filterUnansweredPrompts(prompts.value))
+  const storedData = localStorage.getItem(STORAGE_KEY)
+  const initialPrompts = storedData ? JSON.parse(storedData) : createPrompts(sigCodeData)
+
+  const prompts = reactive(initialPrompts)
+  const unansweredPrompts = computed(() => filterUnansweredPrompts(prompts))
   const randomUnansweredPrompt = computed(
     () => unansweredPrompts.value[getRandomInt(0, unansweredPrompts.value.length - 1)] || null
   )
 
   const currentPrompt = ref<ISigCodeGuesserAnswer>(randomUnansweredPrompt.value)
 
-  const answers = computed(() => prompts.value.filter((prompt) => prompt.correct !== undefined))
+  watch(
+    prompts,
+    () => {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(prompts))
+    },
+    { deep: true }
+  )
+
+  const answers = computed(
+    () => prompts.filter((prompt: ISigCodeGuesserAnswer) => prompt.correct !== undefined) || []
+  )
 
   const checkAnswer = (sigCode: string) => {
     if (currentPrompt.value) {
@@ -35,5 +50,10 @@ export const useSigCodeGuesserStore = defineStore('sigCodeGuesser', () => {
     }
   }
 
-  return { currentPrompt, checkAnswer, answers }
+  const resetGame = () => {
+    localStorage.removeItem(STORAGE_KEY)
+    window.location.reload()
+  }
+
+  return { currentPrompt, checkAnswer, answers, resetGame }
 })
