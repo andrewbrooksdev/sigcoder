@@ -3,13 +3,14 @@ import { defineStore } from 'pinia'
 import SigCodeData from '../models/SigCodeData'
 import type ISigCode from '../interfaces/ISigCode'
 import SigCodeGuesserAnswer from '../models/SigCodeGuesserAnswer'
+import type ISigCodeGuesserAnswer from '@/interfaces/ISigCodeGuesserAnswer'
 
 const getRandomInt = (min: number, max: number) => Math.floor(Math.random() * (max - min + 1)) + min
 
 const createPrompts = (data: ISigCode[]) =>
   reactive(data.map((item) => new SigCodeGuesserAnswer(item)))
 
-const filterUnansweredPrompts = (prompts: SigCodeGuesserAnswer[]) =>
+const filterUnansweredPrompts = (prompts: ISigCodeGuesserAnswer[]) =>
   prompts.filter((prompt) => prompt.correct === undefined)
 
 export const useSigCodeGuesserStore = defineStore('sigCodeGuesser', () => {
@@ -21,7 +22,7 @@ export const useSigCodeGuesserStore = defineStore('sigCodeGuesser', () => {
     () => unansweredPrompts.value[getRandomInt(0, unansweredPrompts.value.length - 1)] || null
   )
 
-  const currentPrompt = ref<SigCodeGuesserAnswer>(randomUnansweredPrompt.value)
+  const currentPrompt = ref<ISigCodeGuesserAnswer>(randomUnansweredPrompt.value)
 
   const answers = computed(() => prompts.value.filter((prompt) => prompt.correct !== undefined))
 

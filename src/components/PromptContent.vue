@@ -9,6 +9,7 @@ watch(
   () => sigCodeGuesserStore.currentPrompt,
   () => {
     currentPrompt.value = sigCodeGuesserStore.currentPrompt
+    console.log(currentPrompt.value.sigCode.sig_code)
   },
   { deep: true }
 )
